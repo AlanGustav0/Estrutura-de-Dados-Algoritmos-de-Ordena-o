@@ -62,7 +62,7 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerBubble.write("Tempo total para ordenação: " + tempoTotal + "\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerBubble.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
 				writerBubble.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -87,7 +87,7 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerSelection.write("Tempo total para ordenação: " + tempoTotal + "\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerSelection.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
 				writerSelection.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -111,7 +111,7 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerInsertion.write("Tempo total para ordenação: " + tempoTotal+ "\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerInsertion.write("Tempo total para ordenação: " + tempoTotal+ "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
 				writerInsertion.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -143,7 +143,7 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerQuick.write("Tempo total para ordenação: " + tempoTotal+ "\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerQuick.write("Tempo total para ordenação: " + tempoTotal+ "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
 				writerQuick.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
