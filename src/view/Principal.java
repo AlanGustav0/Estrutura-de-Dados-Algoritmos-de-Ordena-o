@@ -128,9 +128,10 @@ public class Principal {
 				/*
 				 * Para ordenar uma lista com 50 mil números, pode ocorrem o erro de
 				 * StackOverFlow (estouro da pilha), caso isso ocorra será necessário alterar o
-				 * aumentar a capacidade da pilha no eclipse.
+				 * aumentar a capacidade da pilha.
 				 * 
-				 * Caminho: Run/Run Configurations/Arguments/em VM arguments insira -Xss16m
+				 * No eclipse
+				 * Caminho: Run/Run Configurations/Arguments/VM arguments insira -Xss16m
 				 */
 
 				nomeArquivo = "valoresQuickSort.txt";

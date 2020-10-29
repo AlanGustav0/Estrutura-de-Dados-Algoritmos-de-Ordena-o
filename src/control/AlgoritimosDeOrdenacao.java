@@ -18,8 +18,6 @@ public class AlgoritimosDeOrdenacao {
 		int posicao;
 		int auxiliar;
 
-		// System.out.println("Realizando Bubblesort em um vetor de " + vetor.length + "
-		// elementos");
 		for (iteracao = 0; iteracao < vetor.length; iteracao++) {
 			for (posicao = 0; posicao < vetor.length - iteracao - 1; posicao++) {
 				if (vetor[posicao] > vetor[posicao + 1]) {
@@ -28,8 +26,7 @@ public class AlgoritimosDeOrdenacao {
 					vetor[posicao + 1] = auxiliar;
 				}
 			}
-			// System.out.println("--------------Final da iteracao: " + iteracao);
-			// mostravetor();
+	
 		}
 
 	}
@@ -49,8 +46,6 @@ public class AlgoritimosDeOrdenacao {
 				}
 
 			}
-			// System.out.println("Menor Elemento encontrado na iteração esta na posição " +
-			// posMenor);
 			if (vetor[posMenor] < vetor[posMenorInicial]) {
 				temp = vetor[posMenorInicial];
 				vetor[posMenorInicial] = vetor[posMenor];
@@ -58,10 +53,6 @@ public class AlgoritimosDeOrdenacao {
 
 			}
 
-			// writer.newLine();
-
-			// System.out.println("Iteração " + iteracao);
-			// mostravetor();
 		}
 
 	}
@@ -78,9 +69,6 @@ public class AlgoritimosDeOrdenacao {
 				vetor[j + 1] = vetor[j]; // estou trocando todos maiores do que eu
 			}
 			vetor[j + 1] = carta;
-
-			// System.out.println("Iteração " + iteracao);
-			// mostravetor();
 		}
 
 	}
@@ -140,10 +128,11 @@ public class AlgoritimosDeOrdenacao {
 		// E aplicamos o quickSort nos elementos do valor acima do pivô até o final.
 		quickSort(pivo + 1, fim);
 
-		// mostravetor();
 
 	}
-
+	
+	
+ //Metodo para mostrar o vetor, caso necessário 
 	public void mostravetor() {
 		for (int i = 0; i < vetor.length; i++) {
 			System.out.print(vetor[i] + " ");
