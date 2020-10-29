@@ -3,13 +3,13 @@
 ###### BubbleSort
 
 Este é o algoritimo mais básico para ordenação, indicado apenas para finz didáticos, por conta de sua inificiência de performance.
-O Objetivo é percorrer o vetor até que o maior valor esteja no final da lista. Realizando um grande número de comparaçãoes e grande consumo de processamento.
+O Objetivo é percorrer o vetor até que o maior valor esteja no final da lista. realiza comparações de n com n+1, se n for maior que n+1 ele realiza a troca. Realizando um grande número de comparaçãoes e exige elavado nível de processamento.
 
 ###### SelectionSort
 
 Útil para estruturas lineares, porém assim acomo o BubbleSort realiza um grande número de iterações e percorre o vetor inteiro, mas 
 com o objetivo de passar o menor valor para o início da lista, o segundo menor para a segunda posição e assim por diante, reduzindo o tamanho
-da lista a cada iteração. O que o torna um pouco mais perfoemático com relação ao Bubblesort.
+da lista a cada iteração. O que o torna um pouco mais performático em relação ao Bubblesort.
 
 ###### InsertionSort
 
