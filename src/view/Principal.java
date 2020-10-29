@@ -31,8 +31,6 @@ public class Principal {
 		AlgoritimosDeOrdenacao alg = new AlgoritimosDeOrdenacao();
 		
 		
-		
-
 		int vetor[] = new int[gerador.getqtdValores()];
 		tamanhoVetor = vetor.length;
 		String linha = ler.readLine();
