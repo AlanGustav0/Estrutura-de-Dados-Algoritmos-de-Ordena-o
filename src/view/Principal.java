@@ -15,22 +15,20 @@ public class Principal {
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		GeradorDeValores gerador = new GeradorDeValores();
-		
+
 		int tamanhoVetor = 0;
 		int posicao = 0;
 		int opc = 0;
 		int i;
-		String nomeArquivo;
 		double tempoInicial, tempoFinal, tempoTotal;
-		
-		
+		String nomeArquivo;
+
 		gerador.geraValores();
-	
+
 		String fileName = "valoresGerados.txt";
 		BufferedReader ler = new BufferedReader(new FileReader(fileName));
 		AlgoritimosDeOrdenacao alg = new AlgoritimosDeOrdenacao();
-		
-		
+
 		int vetor[] = new int[gerador.getqtdValores()];
 		tamanhoVetor = vetor.length;
 		String linha = ler.readLine();
@@ -42,11 +40,10 @@ public class Principal {
 		}
 
 		alg.setVetor(vetor);
-		
 
 		while (opc != 9) {
 			System.out.println(
-					"Escolha o algoritmo de ordenação desejado:\n1-BubbleSort\n2-SelectionSort\n3-InsertionSort\n4-QuickSort\n9-Finalizar");
+					"Escolha o algoritmo de ordenação desejado:\n1-BubbleSort\n2-SelectionSort\n3-InsertionSort\n4-QuickSort\n5-Gerar novos valores\n9-Finalizar");
 			opc = sc.nextInt();
 
 			switch (opc) {
@@ -62,7 +59,8 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerBubble.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerBubble.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: "
+						+ gerador.getqtdValores() + "\n");
 				writerBubble.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -87,7 +85,8 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerSelection.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerSelection.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: "
+						+ gerador.getqtdValores() + "\n");
 				writerSelection.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -111,7 +110,8 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerInsertion.write("Tempo total para ordenação: " + tempoTotal+ "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerInsertion.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: "
+						+ gerador.getqtdValores() + "\n");
 				writerInsertion.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -130,8 +130,8 @@ public class Principal {
 				 * StackOverFlow (estouro da pilha), caso isso ocorra será necessário alterar o
 				 * aumentar a capacidade da pilha.
 				 * 
-				 * No eclipse
-				 * Caminho: Run/Run Configurations/Arguments/VM arguments insira -Xss16m
+				 * No eclipse Caminho: Run/Run Configurations/Arguments/VM arguments insira
+				 * -Xss16m
 				 */
 
 				nomeArquivo = "valoresQuickSort.txt";
@@ -144,7 +144,8 @@ public class Principal {
 				tempoTotal = tempoFinal - tempoInicial;
 				tempoTotal /= Math.pow(10, 9);
 
-				writerQuick.write("Tempo total para ordenação: " + tempoTotal+ "s\nQuantidade de valores gerados: " + gerador.getqtdValores() + "\n");
+				writerQuick.write("Tempo total para ordenação: " + tempoTotal + "s\nQuantidade de valores gerados: "
+						+ gerador.getqtdValores() + "\n");
 				writerQuick.newLine();
 
 				for (i = 0; i < vetor.length; i++) {
@@ -154,6 +155,11 @@ public class Principal {
 
 				System.out.println("Arquivo ordenado com sucesso!");
 				System.out.println("Tempo total de execução QuickSort: \n" + tempoTotal + "s");
+				break;
+
+			case 5:
+				gerador.geraValores();
+				System.out.println("");
 				break;
 
 			case 9:
