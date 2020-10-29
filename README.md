@@ -22,5 +22,5 @@ Algortimo baseado no método dividir e conquistar, utiliza de recursividade para
 pivô (elemento que será a referência para realizar a ordenação). Após a definição desse pivô, ele faz o quicksort do lado esquerdo do pivo (valores menores)
 e do lado direido do pivô (valores maiores) indepenente se estão odernados ou não, o algoritmo sempre irá deixar o pivô na posição correta.
 
-Ao partir da esquerda para direita **inicio--->pivô** ele verifica se o valor é maior do que o pivô, se encontrar o valor maior ele para, e então começa a verificação do 
-lado direto. **pivô<----fim** realiza o mesmo procedimento até encontrar um valor que seja menor do que o pivô, ao encontrar o valor ele para e realiza a troca desses valores.
+Ao partir da esquerda para direita **inicio---> valor maior que pivô** ele verifica se o valor é maior do que o pivô, se encontrar o valor maior ele para, e então começa a verificação do 
+lado direto. **valor menor que pivô<----fim** realiza o mesmo procedimento até encontrar um valor que seja menor do que o pivô, ao encontrar o valor ele para e realiza a troca desses valores.
